@@ -25,6 +25,9 @@ $(document).ready(function(){
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 	});
+	.keydown(function(event){
+			$('.ryu').html("Key: " + event.which);
+		});
 });
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
